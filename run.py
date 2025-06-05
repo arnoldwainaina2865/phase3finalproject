@@ -259,7 +259,6 @@ class LibraryCLI:
             print(f"ISBN: {book.isbn}")
             print(f"Genre: {book.genre}")
 
-    # Book CRUD operations
     def add_book(self):
         try:
             title = self.validate_input(
@@ -395,7 +394,6 @@ class LibraryCLI:
         else:
             self.print_message("Book not found.")
 
-    # Loan operations
     def borrow_book(self):
         borrower_id = self.validate_input(
             "Enter borrower ID: ",
